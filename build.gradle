@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+version '0.1'
+group 'com.avairebot'
+description = 'Shared values ussed by AvaIre and related projects'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+ext {
+    moduleName = 'AvaIre'
+}
+
+tasks.withType(JavaCompile) {
+    dependsOn 'clean'
+    options.encoding = 'UTF-8'
+    options.compilerArgs << "-Xlint:-unchecked"
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    //
+}
