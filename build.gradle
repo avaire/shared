@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 
-version '0.3'
+version '0.4'
 group 'com.avairebot'
 description = 'Shared values ussed by AvaIre and related projects'
 
